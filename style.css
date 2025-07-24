@@ -1,0 +1,82 @@
+
+/*CSS imports from Google fonts */
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+*{
+  margin:0;
+}
+
+/*shared colors */
+ .text-grey-color{
+  color:rgba(137, 135, 161, 1);
+ }
+
+ /*shared font-weight*/
+.font-bold{
+  font-weight:700;
+}
+
+.font-medium{
+  font-weight:500;
+}
+
+
+/*css styles applied to header section*/
+
+nav ul{
+  list-style: none;
+}
+
+nav ul li{
+  display:inline;
+  margin-right:48px;
+}
+
+.header-logo{
+  width:135px;
+  height:82px;
+}
+
+nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  max-width: 1140px;
+  margin:30px auto 120px auto;
+ 
+}
+
+
+
+/* responsive query for mobile device*/
+
+@media screen and (max-width:576px){
+   /*nav style*/
+   nav{
+    max-width:361px;
+    margin:14px auto 17px auto;
+   }
+    nav ul li{
+      visibility: hidden;
+    }
+   nav ul li{
+      margin-right:20px;
+    } 
+    
+    .cart-icon{
+      visibility: visible;
+    }
+
+  }
