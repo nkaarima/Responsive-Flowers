@@ -105,7 +105,7 @@ nav{
   margin:226px auto;
   background-color: rgba(255, 255, 255, 1);
 }
-.plant-section h1{
+.plant-section h1,.plant-lover-info h1{
   font-size: 3rem;
 }
 
@@ -134,7 +134,28 @@ nav{
   padding:19px 80px;
 }
 
+/*css styles applied to plant lover section */
 
+.plant-lover-section{
+  display:flex;
+  gap:60px;
+  max-width:1140px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.plant-lover-section img{
+  width:100%;
+  
+}
+.plant-lover-info li{
+  margin-bottom: 20px;
+}
+
+.plant-lover-info ul{
+  margin-top: 38px;
+  padding:0;
+}
 
 
 
@@ -159,7 +180,9 @@ nav{
 
     /*responsive style applied to banner*/
        
-       .banner-description h1,.plant-section h1{
+       .banner-description h1,
+       .plant-section h1,
+       .plant-lover-info h1{
         font-size:1.5rem;
        }
      
@@ -188,7 +211,7 @@ nav{
     .plant-card-container{
       grid-template-columns: repeat(2,1fr);
       max-width: 362px;
-      margin: auto;
+      margin:  0 auto;
       justify-items: center;
       
     }
@@ -203,12 +226,25 @@ nav{
     }
     
 
-    .plant-section p{
+    .plant-section p,.plant-lover-info ul{
       font-size: 0.8rem;
     }
 
     .plant-card img{
       width:50%;
+    }
+
+    /*responsive style applied to plant lover section */
+    .plant-lover-section{
+      flex-direction: column;
+      margin-left: 0;
+    }
+    .plant-lover-section{
+      width:358px;
+    }
+    .plant-lover-info ul{
+      margin-left:0px;
+
     }
 
 
