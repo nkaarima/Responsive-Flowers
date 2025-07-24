@@ -40,9 +40,22 @@
 .font-regular{
   font-weight:400;
 }
+.font-medium{
+  font-weight: 500;
+}
 
 
-/*css styles applied to header section*/
+.center-align{
+  text-align: center;
+}
+
+.font22{
+   font-size: 1rem;
+}
+
+/*header section*/
+    
+/*css styles applied to nav section */
 
 nav ul{
   list-style: none;
@@ -73,18 +86,54 @@ nav{
   font-size:4rem;
   margin-bottom: 13px;
 }
-.banner-description p{
-  font: size 1rem;
-}
 
 .banner{
   display:flex;
   align-items: center;
   max-width: 1140px;
   margin:auto;
-  background-color: rgba(255, 255, 255, 1);
   border:1px solid;
+  background-color: rgba(255, 255, 255, 1);
 }
+
+  /*css styles applied to main section*/
+
+
+/*css styles applied to plant section */
+.plant-section{
+  max-width: 1140px;
+  margin:226px auto;
+  background-color: rgba(255, 255, 255, 1);
+}
+.plant-section h1{
+  font-size: 3rem;
+}
+
+.plant-card-container{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
+.plant-card img{
+  margin-bottom: 30px;
+}
+.plant-card{
+  box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.plant-card button{
+  background-color: rgba(233, 90, 8, 1);
+  width: 270px;
+  height:50px;
+  color:white;
+  border:none;
+  font-weight:600;
+  font-size:1rem;
+  padding:19px 80px;
+}
+
 
 
 
@@ -110,7 +159,7 @@ nav{
 
     /*responsive style applied to banner*/
        
-       .banner-description h1{
+       .banner-description h1,.plant-section h1{
         font-size:1.5rem;
        }
      
@@ -129,7 +178,38 @@ nav{
            margin-bottom:10px;
         }
 
+  /* respnsive style added to main section*/
+  /*responsive style added to plant section*/
 
+  .plant-section{
+    max-width: 393px;
+    margin:50px auto;
+  }
+    .plant-card-container{
+      grid-template-columns: repeat(2,1fr);
+      max-width: 362px;
+      margin: auto;
+      justify-items: center;
+      
+    }
+
+    .plant-card{
+      width:171px;
+    }
+    .plant-card button{
+      width:171px;
+      height:50px;
+      padding:10px 50px;
+    }
+    
+
+    .plant-section p{
+      font-size: 0.8rem;
+    }
+
+    .plant-card img{
+      width:50%;
+    }
 
 
   }
