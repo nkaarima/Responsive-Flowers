@@ -14,22 +14,31 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-*{
-  margin:0;
-}
+
 
 /*shared colors */
  .text-grey-color{
   color:rgba(137, 135, 161, 1);
  }
+.text-light-grey{
+  color:rgba(0, 0, 0, 0.5);
+}
+
+ .text-orange-color{
+  color:rgba(233, 90, 8, 1);
+ }
+ .website-background-color{
+  background-color: rgba(245, 248, 255, 1);
+ }
+
 
  /*shared font-weight*/
 .font-bold{
   font-weight:700;
 }
 
-.font-medium{
-  font-weight:500;
+.font-regular{
+  font-weight:400;
 }
 
 
@@ -41,7 +50,7 @@ nav ul{
 
 nav ul li{
   display:inline;
-  margin-right:48px;
+  margin-right:55px;
 }
 
 .header-logo{
@@ -50,20 +59,40 @@ nav ul li{
 }
 
 nav{
+  background-color: rgba(255, 255, 255, 1);
   display:flex;
   align-items:center;
   justify-content:space-between;
   max-width: 1140px;
-  margin:30px auto 120px auto;
+  margin:0 auto 120px auto;
  
 }
+
+/*css styles applied to banner section */
+.banner-description h1{
+  font-size:4rem;
+  margin-bottom: 13px;
+}
+.banner-description p{
+  font: size 1rem;
+}
+
+.banner{
+  display:flex;
+  align-items: center;
+  max-width: 1140px;
+  margin:auto;
+  background-color: rgba(255, 255, 255, 1);
+  border:1px solid;
+}
+
 
 
 
 /* responsive query for mobile device*/
 
 @media screen and (max-width:576px){
-   /*nav style*/
+   /*responsive style applied to nav*/
    nav{
     max-width:361px;
     margin:14px auto 17px auto;
@@ -72,11 +101,35 @@ nav{
       visibility: hidden;
     }
    nav ul li{
-      margin-right:20px;
+      margin-right:15px;
     } 
     
     .cart-icon{
       visibility: visible;
     }
+
+    /*responsive style applied to banner*/
+       
+       .banner-description h1{
+        font-size:1.5rem;
+       }
+     
+        .banner-description p{
+          font-size: 0.8rem;
+          padding-left: 5px;
+        }
+
+        .banner{
+          flex-direction: column-reverse;
+          justify-content: left;
+          border: none;
+        }
+        .banner-image{
+           width: 50%;
+           margin-bottom:10px;
+        }
+
+
+
 
   }
