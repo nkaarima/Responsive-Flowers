@@ -105,7 +105,9 @@ nav{
   margin:226px auto;
   background-color: rgba(255, 255, 255, 1);
 }
-.plant-section h1,.plant-lover-info h1{
+.plant-section h1,
+.plant-lover-info h1
+,.deal-section h2{
   font-size: 3rem;
 }
 
@@ -145,7 +147,7 @@ nav{
   justify-content: center;
 }
 .plant-lover-section img{
-  width:100%;
+  width:50%;
   
 }
 .plant-lover-info li{
@@ -155,6 +157,27 @@ nav{
 .plant-lover-info ul{
   margin-top: 38px;
   padding:0;
+}
+
+/*css styles applied to deal section */
+.bloom-ana-plant{
+  display:flex;
+  flex-direction: column;
+}
+.bloom-ana-plant img{
+  width:100%;
+  border-radius: 14px;
+  margin-bottom: 25px;
+}
+.discount-on-flowers{
+  display: flex;
+  gap:25px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.zabo-plant img{
+  width:100%;
+  border-radius: 22px;
 }
 
 
@@ -205,20 +228,14 @@ nav{
   /*responsive style added to plant section*/
 
   .plant-section{
-    max-width: 393px;
-    margin:50px auto;
+    margin:20px auto;
+    
   }
     .plant-card-container{
       grid-template-columns: repeat(2,1fr);
-      max-width: 362px;
-      margin:  0 auto;
-      justify-items: center;
       
     }
 
-    .plant-card{
-      width:171px;
-    }
     .plant-card button{
       width:171px;
       height:50px;
@@ -237,13 +254,18 @@ nav{
     /*responsive style applied to plant lover section */
     .plant-lover-section{
       flex-direction: column;
-      margin-left: 0;
+      gap:10px;
+      margin: 0;
+      
     }
-    .plant-lover-section{
-      width:358px;
+    .plant-lover-info{
+      margin: 0;
     }
+
+  
     .plant-lover-info ul{
-      margin-left:0px;
+      margin-top: 10px;
+      padding: 0;
 
     }
 
