@@ -149,7 +149,7 @@ nav{
   align-items: center;
   justify-content: center;
 }
-.plant-lover-section img{
+.flower-store{
   width:50%;
   
 }
@@ -160,6 +160,12 @@ nav{
 .plant-lover-info ul{
   margin-top: 38px;
   padding:0;
+}
+.badge-icon{
+  width:286px;
+  height:286px;
+  margin-left:-240px;
+  margin-top: -550px;
 }
 
 /*css styles applied to deal section */
@@ -231,6 +237,27 @@ input[type="email"]{
   color:white;
   padding-top: 199px;
  
+}
+
+/*css style applied to footer */
+
+.footer-options{
+  color:rgba(107, 114, 128, 1);
+  display:grid;
+  grid-template-columns: repeat(2,180px);
+  
+}
+
+.footer-logo img{
+  margin-right:24px;
+}
+
+footer{
+  max-width: 1120px;
+  margin: 50px auto;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
 }
 
 
@@ -323,6 +350,9 @@ input[type="email"]{
       padding: 0;
 
     }
+    .badge-icon{
+      display:none;
+    }
 
     /*responsive style applied to deal section*/
     .discount-on-flowers{
@@ -359,5 +389,14 @@ input[type="email"]{
    width:103px;
    padding:0;
  }
+
+ /* responsive css applied to footer */
+  footer{
+    grid-template-columns: 1fr;
+    margin-top:0;
+  }
+  .footer-options{
+    grid-template-columns: 1fr;
+  }
 
   }
