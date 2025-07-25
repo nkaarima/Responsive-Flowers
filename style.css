@@ -109,7 +109,8 @@ nav{
 }
 .plant-section h1,
 .plant-lover-info h1
-,.deal-section h2{
+,.deal-section h2,
+.join-section h2{
   font-size: 3rem;
 }
 
@@ -127,7 +128,7 @@ nav{
   box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.plant-card button{
+.plant-card button,.join-section button{
   background-color: rgba(233, 90, 8, 1);
   width: 270px;
   height:50px;
@@ -203,11 +204,34 @@ nav{
 }
 
 .zabo-plant div{
-   top:120px;
-   left:80px;
+   top:100px;
+   left:30px;
    font-size: 2rem;
 }
 
+/*css style applied to join section */
+.join-section button{
+  width:186px;
+  height:50px;
+  padding: 19px 53px;
+  
+}
+input[type="email"]{
+  width:644px;
+  height:50px;
+  padding:16px 20px;
+}
+.join-section{
+  background-image:url(assets/news-letter-bg.png);
+  height:533px;
+ 
+}
+
+.join-section h2{
+  color:white;
+  padding-top: 199px;
+ 
+}
 
 
 /* responsive query for mobile device*/
@@ -309,5 +333,31 @@ nav{
 .discount-on-flowers img{
     filter:brightness(50%);
 } 
+
+/*responsive style added to join section*/
+ .join-section{
+  height:275px;
+  width:393px;
+  background-size:contain;
+  background-repeat: no-repeat;
+ 
+  
+ }
+ .join-section h2, input[type="email"]{
+   font-size: 1rem;
+ }
+ .join-section h2{
+  padding-top:20px;
+ }
+
+ input[type="email"]{
+  width:218px;
+  padding:10px;
+  
+ }
+ .join-section button{
+   width:103px;
+   padding:0;
+ }
 
   }
